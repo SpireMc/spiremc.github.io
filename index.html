@@ -1,154 +1,193 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Join SpireMC, a Java 1.21.1 RPG style Minecraft server. Enjoy unique gameplay features and a friendly community.">
-  <meta name="keywords" content="SpireMC, Minecraft, Java server, gaming community, kingdoms, gameplay features">
+  <meta name="description"
+    content="Join SpireMC, a Java 1.21.1 RPG style Minecraft server. Enjoy unique gameplay features and a friendly community.">
+  <meta name="keywords" content="SpireMC, Minecraft, Java server, gaming community, kingdoms, RPG, RPG server">
   <meta name="author" content="SpireMC Team">
   <title>SpireMC</title>
-  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="styles/output.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 </head>
 
-<body class="bg-gray-900 text-white font-sans">
+<body class="justify-center">
+  <header class="py-5 mx-auto select-none sm:mb-[25vh]">
+    <nav
+      class="flex flex-col px-6 py-4 w-full font-bold text-center rounded-full bg-cmantle sm:flex-row sm:text-left sm:justify-between sm:items-baseline">
+      <p>
+        <img src="./assets/logo.png" alt="spiremc logo" class="inline-flex size-8">
+        SpireMC
+      </p>
+      <div class="hidden sm:inline">
+        <a href="#" class="p-2 ml-2 rounded-full bg-cspire text-ccrust hover:text-ctext hover:bg-coverlay0">Home</a>
+        <a href="https://store.spire-mc.com" class="p-2 ml-2 rounded-full hover:bg-coverlay0">Store</a>
+        <a href="https://discord.gg/wuqUpFaMwy" class="p-2 ml-2 rounded-full hover:bg-coverlay0">Discord</a>
+      </div>
+    </nav>
+  </header>
 
-    <!-- Hero Section -->
-    <section class="bg-cover bg-center h-screen" style="background-image: url('./assets/2.png');">
-        <div class="container mx-auto text-center py-48 mb-auto">
-            <h1 class="text-6xl font-extrabold text-yellow-400 mb-4">SpireMC</h1>
-            <p class="text-2xl mb-8 font-bold">Something never seen before. A chill RPG style Java 1.21 Minecraft server.</p>
-            <div class="space-x-4">
-                <a href="https://discord.gg/wuqUpFaMwy" class="px-8 py-3 bg-yellow-500 hover:bg-yellow-400 text-lg font-semibold rounded-full transition duration-300 inline-flex items-center my-1">
-                    <i class="fab fa-discord mr-2"></i>Join Our Discord
-                </a>
-                <a href="#" class="px-8 py-3 bg-yellow-500 hover:bg-yellow-400 text-lg font-semibold rounded-full transition duration-300 inline-flex items-center my-1">
-                    <i class="fas fa-store mr-2"></i>Visit Our Store
-                </a>
-                <button id="copyIP" class="px-8 py-3 bg-yellow-500 hover:bg-yellow-400 text-lg font-semibold rounded-full transition duration-300 inline-flex items-center my-1">
-                    Copy Server IP
-                </button>
-            </div>
+  <section class="px-4 py-8 mx-auto max-w-screen-xl sm:px-6 lg:px-8">
+    <div class="grid grid-cols-1 gap-4 md:grid-cols-2 md:items-center md:gap-8">
+      <div class="max-w-lg md:max-w-none">
+        <h2 class="text-2xl font-bold sm:text-3xl ug-peach">
+          Something never seen before.
+        </h2>
+
+        <p class="mt-4">
+          An RPG-style war Minecraft server with a unique concept: <strong class="font-extrabold">3 Kingdoms.</strong>
+          <br>
+          Romans, Vikings, and Samurai, all fighting to conquer territory. Dungeons, items, mobs — and much more.
+          Releasing on December 1st. Stay tuned by joining our friendly community <a
+            href="https://discord.gg/wuqUpFaMwy" class="link2">Discord</a>.
+        </p>
+
+        <div class="space-x-3 select-none">
+          <a href="https://discord.gg/wuqUpFaMwy"
+            class="inline-flex items-center p-2 my-4 font-semibold rounded-full transition duration-300 text-ccrust bg-cspire hover:bg-ccrust hover:text-ctext">
+            <i class="mx-2 fab fa-discord"></i>Discord
+          </a>
+          <a href="https://store.spire-mc.com"
+            class="inline-flex items-center p-2 my-4 font-semibold rounded-full transition duration-300 text-ccrust bg-cspire hover:bg-ccrust hover:text-ctext">
+            <i class="mx-2 fas fa-store"></i>Store
+          </a>
+          <button id="copyIP"
+            class="inline-flex items-center p-2 my-4 font-semibold rounded-full transition duration-300 text-ccrust bg-cspire hover:bg-ccrust hover:text-ctext">
+            <i class="mx-2 fas fa-copy"></i> Copy IP
+          </button>
         </div>
-    </section>
+      </div>
 
-    <!-- Mission and Release Section -->
-    <section class="py-16 bg-slate-900 mx-5">
-        <div class="container mx-auto grid grid-cols-1 md:grid-cols-3 gap-10">
-            <!-- Mission Statement Card -->
-            <div class="bg-gray-800 rounded-lg p-6 shadow-lg transition-transform sm:mx-3 transform hover:-translate-y-2 duration-300 shadow-2xl">
-                <h3 class="text-3xl font-semibold text-yellow-400 mb-4">Our Mission</h3>
-                <p class="text-lg">Our goal with SpireMC is to build a friendly community while providing the best gameplay. Enjoy yourself and have fun in our unique, immersive world!</p>
-            </div>
-            <!-- Release Data Card -->
-            <div class="bg-gray-800 rounded-lg p-6 shadow-lg transition-transform transform sm:mx-3 hover:-translate-y-2 duration-300 shadow-2xl">
-                <h3 class="text-3xl font-semibold text-yellow-400 mb-4">Release Information</h3>
-                <p class="text-lg">Projected beta release: <span class="font-bold">December 1st, 2024</span></p>
-            </div>
-            <!-- Release Data Card -->
-            <div class="bg-gray-800 rounded-lg p-6 shadow-lg transition-transform sm:mx-3 transform hover:-translate-y-2 duration-300 shadow-2xl">
-              <h3 class="text-3xl font-semibold text-yellow-400 mb-4">Development Team</h3>
-              <p class="text-lg">Meet the team behind SpireMC!</p>
-              <a href="./team" class="inline-block mt-4 px-6 py-2 bg-yellow-500 hover:bg-yellow-400 text-lg font-semibold rounded-full transition duration-300">Our Team</a>
-          </div>
+      <video src="./assets/trailer.webm" class="w-full h-full rounded aspect-video" controls></video>
+    </div>
+  </section>
+
+  <section class="px-4 py-8 mx-auto max-w-screen-xl sm:px-6 lg:px-8 sm:mt-[25vh]">
+    <!-- <div class="grid grid-cols-1 gap-4 md:grid-cols-2 md:items-center md:gap-8">
+      <img src="./assets/1.png" class="rounded-lg" alt="" /> -->
+
+    <div class="max-w-lg md:max-w-none">
+      <h2 class="text-2xl font-bold sm:text-3xl ug-red">
+        Custom map, weapons, dungeons, and quests.
+      </h2>
+
+      <p class="mt-4">
+        Our development team has worked tirelessly to bring you the most entertaining experience possible; we hope you
+        enjoy everything that we have to offer. Read on for more details.
+      </p>
+    </div>
+    <!-- </div> -->
+  </section>
+
+  <section class="relative py-16 mx-auto max-w-screen-sm">
+    <div id="carousel" class="overflow-hidden relative">
+      <div class="flex transition-transform duration-500 ease-in-out" style="transform: translateX(0);">
+        <img src="./assets/1.png" alt="Roman Kingdom" class="flex-shrink-0 w-full">
+        <img src="./assets/2.png" alt="Samurai Kingdom" class="flex-shrink-0 w-full">
+        <img src="./assets/3.png" alt="Viking Kingdom" class="flex-shrink-0 w-full">
+      </div>
+
+      <button id="prev"
+        class="absolute left-2 top-1/2 z-10 p-3 text-2xl bg-opacity-50 rounded-full transform -translate-y-1/2 hover:bg-opacity-75">
+        <i class="fas fa-chevron-left"></i>
+      </button>
+      <button id="next"
+        class="absolute right-2 top-1/2 z-10 p-3 text-2xl bg-opacity-50 rounded-full transform -translate-y-1/2 hover:bg-opacity-75">
+        <i class="fas fa-chevron-right"></i>
+      </button>
+    </div>
+    <aside id="carouselItemAlt" class="pt-2 text-base text-center"></aside>
+  </section>
+
+  <section class="py-16 mx-5">
+    <h3 class="mb-10 text-4xl font-bold text-center ug-maroon">3 Kingdoms</h3>
+    <div class="container mx-auto">
+      <div class="grid grid-cols-1 gap-10 md:grid-cols-3">
+        <div
+          class="p-6 rounded-xl shadow-lg transition-transform duration-300 transform bg-cmantle hover:shadow-2xl sm:mx-3 hover:-translate-y-2">
+          <h4 class="text-2xl font-bold ug-pink">Samurai Kingdom <img src="./assets/samurai.png"
+              alt="Samurai Kingdom Icon" class="inline-flex self-center mx-1 w-8 h-8 rounded-full"></h4>
+          <aside>Region: Sakura Mountains</aside>
+          <p class="mt-4">The Samurai are swift, with powerful strikes and agility from their homeland in the Sakura
+            Mountains.</p>
         </div>
-    </section>
-
-    <!-- Features Section -->
-    <section class="bg-slate-900 py-16 mx-5">
-        <div class="container mx-auto text-center">
-            <h3 class="text-4xl font-semibold text-yellow-400 mb-10">Features</h3>
-            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-                <div class="bg-gray-700 rounded-lg shadow-lg p-6 transition-transform transform hover:-translate-y-2 duration-300 shadow-2xl">
-                    <div class="text-yellow-400 text-4xl mb-4">🗺️</div>
-                    <h4 class="text-xl font-bold mb-2">Custom 12k by 12k Map</h4>
-                    <p>A sprawling custom world awaits, with diverse landscapes and terrains to explore.</p>
-                </div>
-                <div class="bg-gray-700 rounded-lg shadow-lg p-6 transition-transform transform hover:-translate-y-2 duration-300 shadow-2xl">
-                    <div class="text-yellow-400 text-4xl mb-4">⚔️</div>
-                    <h4 class="text-xl font-bold mb-2">Unique Weapons & Mobs</h4>
-                    <p>Discover special weapons and face unique mobs.</p>
-                </div>
-                <div class="bg-gray-700 rounded-lg shadow-lg p-6 transition-transform transform hover:-translate-y-2 duration-300 shadow-2xl">
-                    <div class="text-yellow-400 text-4xl mb-4">🏰</div>
-                    <h4 class="text-xl font-bold mb-2">Regeneratable Dungeons</h4>
-                    <p>Our custom-built dungeons refresh, offering endless challenges and rewards with each run.</p>
-                </div>
-                <div class="bg-gray-700 rounded-lg shadow-lg p-6 transition-transform transform hover:-translate-y-2 duration-300 shadow-2xl">
-                    <div class="text-yellow-400 text-4xl mb-4">📝</div>
-                    <h4 class="text-xl font-bold mb-2">Quest System</h4>
-                    <p>A unique quest system with dynamic missions to keep you engaged.</p>
-                </div>
-                <div class="bg-gray-700 rounded-lg shadow-lg p-6 transition-transform transform hover:-translate-y-2 duration-300 shadow-2xl">
-                    <div class="text-yellow-400 text-4xl mb-4">🚀</div>
-                    <h4 class="text-xl font-bold mb-2">Optimized Server</h4>
-                    <p>High-speed, stable, and designed to support a large number of players.</p>
-                </div>
-                <div class="bg-gray-700 rounded-lg shadow-lg p-6 transition-transform transform hover:-translate-y-2 duration-300 shadow-2xl">
-                    <div class="text-yellow-400 text-4xl mb-4">🎉</div>
-                    <h4 class="text-xl font-bold mb-2">Friendly Community</h4>
-                    <p>An active support team and a welcoming community.</p>
-                </div>
-            </div>
+        <div
+          class="p-6 rounded-xl shadow-lg transition-transform duration-300 transform bg-cmantle hover:shadow-2xl sm:mx-3 hover:-translate-y-2">
+          <h4 class="text-2xl font-bold ug-blue">Viking Kingdom <img src="./assets/viking.png" alt="Viking Kingdom Icon"
+              class="inline-flex self-center mx-1 w-8 h-8 rounded-full"></h4>
+          <aside>Region: Spruce Plains</aside>
+          <p class="mt-4">The Vikings are known for their resilience, thriving in the challenging terrain of the Spruce
+            Plains.</p>
         </div>
-    </section>
-
-    <!-- Kingdoms Section -->
-    <section class="py-16 bg-slate-900 mx-5">
-        <div class="container mx-auto">
-            <h3 class="text-4xl font-semibold text-center text-yellow-400 mb-10">Kingdoms</h3>
-            <div class="grid grid-cols-1 md:grid-cols-3 gap-10">
-                <div class="bg-gray-800 rounded-lg shadow-lg p-6 hover:shadow-2xl sm:mx-3 transition-transform transform hover:-translate-y-2 duration-300 shadow-2xl">
-                    <h4 class="text-2xl font-bold text-yellow-400">Samurai Kingdom <img src="./assets/samurai.png" alt="Samurai Kingdom Icon" class="self-center w-8 h-8 rounded-full mx-1 inline-flex"></h4>
-                    <p class="text-sm">Region: Sakura Mountains</p>
-                    <p class="mt-4">The Samurai are swift, with powerful strikes and agility from their homeland in the Sakura Mountains.</p>
-                </div>
-                <div class="bg-gray-800 rounded-lg shadow-lg p-6 hover:shadow-2xl sm:mx-3 transition-transform transform hover:-translate-y-2 duration-300 shadow-2xl">
-                    <h4 class="text-2xl font-bold text-yellow-400">Viking Kingdom <img src="./assets/viking.png" alt="Viking Kingdom Icon" class="self-center w-8 h-8 rounded-full mx-1 inline-flex"></h4>
-                    <p class="text-sm">Region: Spruce Plains</p>
-                    <p class="mt-4">The Vikings are known for their resilience, thriving in the challenging terrain of the Spruce Plains.</p>
-                </div>
-                <div class="bg-gray-800 rounded-lg shadow-lg p-6 hover:shadow-2xl sm:mx-3 transition-transform transform hover:-translate-y-2 duration-300 shadow-2xl">
-                    <h4 class="text-2xl font-bold text-yellow-400">Roman Kingdom<img src="./assets/roman.png" alt="Roman Kingdom Icon" class="self-center w-8 h-8 rounded-full mx-1 inline-flex"></h4>
-                    <p class="text-sm">Region: Mountain Plains</p>
-                    <p class="mt-4">The Romans are masters of strategy, dominating the Mountain Plains with strength and unity.</p>
-                </div>
-            </div>
+        <div
+          class="p-6 rounded-xl shadow-lg transition-transform duration-300 transform bg-cmantle hover:shadow-2xl sm:mx-3 hover:-translate-y-2">
+          <h4 class="text-2xl font-bold ug-mauve">Roman Kingdom<img src="./assets/roman.png" alt="Roman Kingdom Icon"
+              class="inline-flex self-center mx-1 w-8 h-8 rounded-full"></h4>
+          <aside>Region: Mountain Plains</aside>
+          <p class="mt-4">The Romans are masters of strategy, dominating the Mountain Plains with strength and unity.
+          </p>
         </div>
-    </section>
+      </div>
+    </div>
+  </section>
 
-    <!-- Footer Section -->
-    <footer class="bg-slate-900 py-8 mx-5">
-        <div class="container mx-auto text-center">
-            <ul class="flex justify-center space-x-6">
-                <li><a href="./faq" class="hover:text-yellow-400 transition duration-300">FAQ</a></li>
-                <li><a href="./tos" class="hover:text-yellow-400 transition duration-300">TOS</a></li>
-                <li><a href="https://discord.gg/wuqUpFaMwy" class="hover:text-yellow-400 transition duration-300">Discord</a></li>
-                <li><a href="./store" class="hover:text-yellow-400 transition duration-300">Store</a></li>
-            </ul>
-            <p class="mt-4 text-sm">&copy; 2024 SpireMC. All rights reserved.</p>
+  <!-- <section class="py-16 mx-5">
+    <div class="container mx-auto text-center">
+      <h3 class="mb-10 text-4xl font-bold ug-sky">Features</h3>
+      <div class="grid grid-cols-1 gap-8 md:grid-cols-2 lg:grid-cols-3">
+        <div
+          class="p-6 rounded-xl shadow-lg transition-transform duration-300 transform bg-cmantle hover:-translate-y-2">
+          <div class="mb-4 text-4xl select-none">🗺️</div>
+          <h4 class="mb-2 text-xl font-bold">Custom 12k by 12k Map</h4>
+          <p>Spanning twelve thousand by twelve thousand blocks, our custom map has beautiful scenery, from forests to
+            mountains and much more.</p>
         </div>
-    </footer>
+        <div
+          class="p-6 rounded-xl shadow-lg transition-transform duration-300 transform bg-cmantle hover:-translate-y-2">
+          <div class="mb-4 text-4xl select-none">⚔️</div>
+          <h4 class="mb-2 text-xl font-bold">Custom Weapons</h4>
+          <p>Custom-made weapons to discover and claim.</p>
+        </div>
+        <div
+          class="p-6 rounded-xl shadow-lg transition-transform duration-300 transform bg-cmantle hover:-translate-y-2">
+          <div class="mb-4 text-4xl select-none">🏰</div>
+          <h4 class="mb-2 text-xl font-bold">Dungeons</h4>
+          <p>Our custom-built dungeons regenerate infinitely, offering endless challenges and rewards with each run.</p>
+        </div>
+        <div
+          class="p-6 rounded-xl shadow-lg transition-transform duration-300 transform bg-cmantle hover:-translate-y-2">
+          <div class="mb-4 text-4xl select-none">📝</div>
+          <h4 class="mb-2 text-xl font-bold">Custom Quests</h4>
+          <p>A unique quest system with dynamic missions to keep you engaged.</p>
+        </div>
+        <div
+          class="p-6 rounded-xl shadow-lg transition-transform duration-300 transform bg-cmantle hover:-translate-y-2">
+          <div class="mb-4 text-4xl select-none">🚀</div>
+          <h4 class="mb-2 text-xl font-bold">Optimized Server</h4>
+          <p>High-speed, stable, and designed to support a large number of players at once.</p>
+        </div>
+        <div
+          class="p-6 rounded-xl shadow-lg transition-transform duration-300 transform bg-cmantle hover:-translate-y-2">
+          <div class="mb-4 text-4xl select-none">🎉</div>
+          <h4 class="mb-2 text-xl font-bold">Friendly Community</h4>
+          <p>We have an active support team and a welcoming community. Tired of toxic communities constantly engulfed in
+            drama? We don't have any of that.</p>
+        </div>
+      </div>
+    </div>
+  </section> -->
 
-    <script>
-      document.getElementById('copyIP').onclick = function() {
-          navigator.clipboard.writeText('spire-mc.com').then(function() {
-              const button = document.getElementById('copyIP');
-              button.innerHTML = '✅ Successfully copied server IP';
-              button.classList.add('bg-green-500', 'hover:bg-green-400');
-              button.disabled = true; 
-  
-              setTimeout(() => {
-                  button.innerHTML = 'Copy Server IP';
-                  button.classList.remove('bg-green-500', 'hover:bg-green-400');
-                  button.disabled = false;
-              }, 3000);
-          }, function(err) {
-              console.error('Could not copy IP: ', err);
-          });
-      };
-  </script>
-  
+  <footer class="text-sm text-center">
+    &copy; <span class="text-cspire">SpireMC</span> 2024 — Present
+    | Made with 💖 by <a href="https://orangc.xyz" class="ug-peach link">orangc</a>
+    | The SpireMC development team can be found <a href="./team" class="link2">here</a>.
+  </footer>
+
+  <!-- scripts -->
+  <script src="scripts/copy-ip.js"></script>
+  <script src="./scripts/carousel.js"></script>
+
 </body>
-
 </html>
